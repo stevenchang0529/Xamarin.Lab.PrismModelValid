@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin.Lab.PrismModelValid.Views.MainPage"
+             Title="{Binding Title}">
+
+    <StackLayout  VerticalOptions="CenterAndExpand" Padding="100,60">
+        <Entry Text="{Binding Id}" Placeholder="請輸入帳號"/>
+        <Entry Text="{Binding Pwd}" Placeholder="請輸入密碼" IsPassword="True"/>
+        <Button Text="登入" Command="{Binding OnLogin}" />
+    </StackLayout>
+
+</ContentPage>
